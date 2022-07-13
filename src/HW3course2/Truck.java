@@ -17,12 +17,11 @@ public class Truck extends WheeledTransport {
     }
     @Override
     public void check () {
-        Truck truck = this;
-            System.out.println("Обслуживаем " + this.getModelName());
-            truck.checkEngine();
-            truck.checkTrailer();
-            for (int i = 0; i < this.getWheelsCount(); i++) {
-                truck.updateTyre();
+            System.out.println("Обслуживаем " + getModelName());
+            checkEngine();
+            checkTrailer();
+            for (int i = 0; i < getWheelsCount(); i++) {
+            updateTyre();
 
             }
         }

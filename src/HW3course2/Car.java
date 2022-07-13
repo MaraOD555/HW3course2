@@ -14,11 +14,10 @@ public class Car extends WheeledTransport implements Service{
 
         @Override
         public void check () {
-            Car car = this;
-                System.out.println("Обслуживаем " + this.getModelName());
-                car.checkEngine();
-                for (int i = 0; i < this.getWheelsCount(); i++) {
-                    car.updateTyre();
+                System.out.println("Обслуживаем " + getModelName());
+                checkEngine();
+                for (int i = 0; i < getWheelsCount(); i++) {
+                updateTyre();
 
                 }
             }

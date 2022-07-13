@@ -11,11 +11,16 @@ public class Main {
         Bicycle bicycle1 = new Bicycle("GIANT", 2);
         Bicycle bicycle2 = new Bicycle("CUBE", 2);
 
+        Service car3 = new Car("Rover", 4);
+        Service truck3 = new Truck("Scania", 10);
+        Service bicycle3 = new Bicycle("Merida", 2);
+
         bicycle1.check();
         car2.check();
         truck2.check();
-        Service car3 = new Car("Rover", 4);
         car3.check();
+        bicycle3.check();
+        truck3.check();
     }
 }
 

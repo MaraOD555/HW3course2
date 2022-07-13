@@ -12,10 +12,9 @@ public class Bicycle extends WheeledTransport implements Service {
 
     @Override
     public void check() {
-        Bicycle bicycle = this;
-            System.out.println("Обслуживаем " + this.getModelName());
-            for (int i = 0; i < this.getWheelsCount(); i++) {
-                bicycle.updateTyre();
+            System.out.println("Обслуживаем " + getModelName());
+            for (int i = 0; i < getWheelsCount(); i++) {
+            updateTyre();
 
             }
         }
