@@ -15,12 +15,17 @@ public class Main {
         Service truck3 = new Truck("Scania", 10);
         Service bicycle3 = new Bicycle("Merida", 2);
 
+        ServiceStation transport = new ServiceStation();
+
         bicycle1.check();
         car2.check();
         truck2.check();
-        car3.check();
-        bicycle3.check();
-        truck3.check();
+        ServiceStation.checkTransport(car3);
+        ServiceStation.checkTransport(truck3);
+        transport.checkTransport(car3);
+
     }
 }
+
+
 
